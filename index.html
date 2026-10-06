@@ -1,282 +1,356 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-  <title>Warrior Fitness</title>
+  <title>Warrior Fitness | Earn Your Victory</title>
+  <meta name="description" content="Warrior Fitness is a mission-focused fitness and workout tracking app for strength, endurance, running, Army fitness, and progress tracking." />
+  <meta name="theme-color" content="#0a0a0c" />
 
-  <style>
-    * {
-      box-sizing: border-box;
-      margin: 0;
-      padding: 0;
-    }
+  <meta property="og:title" content="Warrior Fitness | Earn Your Victory" />
+  <meta property="og:description" content="Train with purpose. Track progress. Build strength. Improve endurance. Stay mission-ready." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://popshot602.github.io/warrior-fitness/" />
 
-    body {
-      font-family: Arial, Helvetica, sans-serif;
-      background: #090909;
-      color: white;
-      line-height: 1.6;
-    }
+  <link rel="canonical" href="https://popshot602.github.io/warrior-fitness/" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@600;700;800&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
 
-    header {
-      background: linear-gradient(135deg, #050505, #1b0000);
-      text-align: center;
-      padding: 80px 20px;
-      border-bottom: 3px solid #d40000;
-    }
-
-    header h1 {
-      font-size: 3.5rem;
-      color: #ff2020;
-      text-transform: uppercase;
-      letter-spacing: 4px;
-    }
-
-    header p {
-      margin-top: 15px;
-      font-size: 1.2rem;
-      color: #ddd;
-    }
-
-    .button {
-      display: inline-block;
-      margin-top: 30px;
-      padding: 14px 28px;
-      background: #d40000;
-      color: white;
-      text-decoration: none;
-      border-radius: 8px;
-      font-weight: bold;
-    }
-
-    .button:hover {
-      background: #ff2020;
-    }
-
-    section {
-      max-width: 1100px;
-      margin: auto;
-      padding: 60px 25px;
-    }
-
-    h2 {
-      color: #ff2020;
-      margin-bottom: 25px;
-      font-size: 2rem;
-    }
-
-    .features {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
-      gap: 20px;
-    }
-
-    .card {
-      background: #151515;
-      padding: 25px;
-      border-radius: 12px;
-      border: 1px solid #333;
-    }
-
-    .card h3 {
-      color: #ff3030;
-      margin-bottom: 10px;
-    }
-
-    .legal {
-      background: #111;
-      border-top: 1px solid #333;
-    }
-
-    footer {
-      text-align: center;
-      padding: 35px 20px;
-      background: #050505;
-      color: #aaa;
-      font-size: 0.9rem;
-    }
-
-    footer a {
-      color: #ff3030;
-    }
-  </style>
+  <link rel="stylesheet" href="styles.css" />
+  <script src="script.js" defer></script>
 </head>
 
 <body>
+  <a class="skip-link" href="#main-content">Skip to content</a>
 
-<header>
-  <h1>Warrior Fitness</h1>
+  <header class="site-header">
+    <div class="container nav-wrap">
+      <a class="brand" href="index.html" aria-label="Warrior Fitness home">
+        <span class="brand-mark" aria-hidden="true">WF</span>
+        <span class="brand-copy">
+          <strong>Warrior Fitness</strong>
+          <small>Earn Your Victory</small>
+        </span>
+      </a>
 
-  <p>
-    Train harder. Track progress. Build your strongest self.
-  </p>
+      <button class="nav-toggle" type="button" aria-label="Open navigation" aria-expanded="false" aria-controls="site-nav">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
 
-  <a href="#features" class="button">
-    Explore Warrior Fitness
-  </a>
-</header>
-
-
-<section id="about">
-
-  <h2>About Warrior Fitness</h2>
-
-  <p>
-    Warrior Fitness is a workout tracking and training app designed
-    to help users build workouts, track personal records, monitor
-    progress, complete daily WODs, and train toward their fitness goals.
-  </p>
-
-</section>
-
-
-<section id="features">
-
-  <h2>Features</h2>
-
-  <div class="features">
-
-    <div class="card">
-      <h3>Workout Tracking</h3>
-      <p>
-        Log exercises, sets, repetitions, weight, timed exercises,
-        and complete workouts.
-      </p>
+      <nav id="site-nav" class="site-nav" aria-label="Main navigation">
+        <a href="#about">About</a>
+        <a href="#features">Features</a>
+        <a href="#army-fitness">Army Fitness</a>
+        <a href="#coming-soon">Coming Soon</a>
+        <a href="privacy.html">Privacy</a>
+        <a href="support.html">Support</a>
+      </nav>
     </div>
+  </header>
 
-    <div class="card">
-      <h3>Personal Records</h3>
-      <p>
-        Track PRs for weight, repetitions, estimated 1RM,
-        workout volume, pace, and more.
-      </p>
+  <main id="main-content">
+    <section class="hero">
+      <div class="hero-noise" aria-hidden="true"></div>
+      <div class="hero-glow hero-glow-one" aria-hidden="true"></div>
+      <div class="hero-glow hero-glow-two" aria-hidden="true"></div>
+
+      <div class="container hero-grid">
+        <div class="hero-copy">
+          <p class="eyebrow">Mission-focused training</p>
+          <h1>Warrior Fitness</h1>
+          <p class="hero-motto">Earn Your Victory</p>
+          <p class="hero-lead">
+            Train with purpose, track what matters, and build the strength and endurance to stay ready for whatever your mission demands.
+          </p>
+
+          <div class="hero-actions">
+            <a class="btn btn-primary" href="#features">Explore Features</a>
+            <a class="btn btn-secondary" href="privacy.html">View Privacy Policy</a>
+          </div>
+
+          <div class="release-panel" aria-label="Release status">
+            <div class="release-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" role="img" aria-hidden="true">
+                <path d="M3 2.5v19l15.4-9.5L3 2.5Zm2 3.6L14.6 12 5 17.9V6.1Z"></path>
+              </svg>
+            </div>
+            <div>
+              <span class="release-label">Android Release</span>
+              <strong>Google Play — Coming Soon</strong>
+              <small>Store link will be added after the public listing is live.</small>
+            </div>
+          </div>
+        </div>
+
+        <div class="hero-art" aria-label="Stylized Spartan shield and helmet artwork">
+          <div class="shield-ring">
+            <svg class="spartan-svg" viewBox="0 0 460 560" role="img" aria-labelledby="spartanTitle spartanDesc">
+              <title id="spartanTitle">Stylized Spartan helmet and shield</title>
+              <desc id="spartanDesc">Original red and charcoal Spartan-inspired emblem for Warrior Fitness.</desc>
+
+              <path class="shield-fill" d="M230 18 410 78v168c0 130-79 238-180 296C129 484 50 376 50 246V78L230 18Z"/>
+              <path class="shield-line" d="M230 37 392 91v155c0 118-70 218-162 274C138 464 68 364 68 246V91L230 37Z"/>
+
+              <path class="crest" d="M160 140c8-57 37-93 74-114 46 18 77 57 86 111-34-18-78-30-127-21-10 2-21 6-33 12v12Z"/>
+              <path class="helmet" d="M133 156c14-38 54-64 101-64 47 0 87 25 102 63l-18 16v45c0 13-6 26-17 34l-20 16v58h-43v-96h-24v96h-44v-73l-26-20c-12-9-18-23-18-38v-35l17-12Z"/>
+              <path class="helmet-cut" d="M179 174h112l-29 27H194l-15-27Z"/>
+              <path class="helmet-cut" d="M226 194h18v123h-18V194Z"/>
+              <path class="helmet-shadow" d="M137 179h37v30l36 26v89h-40v-72l-27-20c-10-8-16-20-16-33v-20h10Z"/>
+
+              <path class="spear" d="M354 113 144 444l13 8 210-332-13-7Z"/>
+              <path class="spear-head" d="m372 82-2 45-37-20 39-25Z"/>
+              <path class="spear-butt" d="m131 464 18-31 15 10-24 27-9-6Z"/>
+
+              <path class="laurel" d="M112 344c-31 20-52 56-55 96 28-3 54-15 74-34-2-22-9-43-19-62Zm236 0c31 20 52 56 55 96-28-3-54-15-74-34 2-22 9-43 19-62Z"/>
+              <path class="laurel-line" d="M88 404c20-17 35-37 45-60M372 404c-20-17-35-37-45-60"/>
+            </svg>
+
+            <div class="warrior-badge">
+              <span>Train</span>
+              <strong>WF</strong>
+              <span>Track</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="hero-stripe" aria-hidden="true"></div>
+    </section>
+
+    <section id="about" class="section">
+      <div class="container section-grid">
+        <div>
+          <p class="eyebrow">Built for real training</p>
+          <h2>One place for the way you actually train.</h2>
+        </div>
+
+        <div class="prose">
+          <p>
+            Warrior Fitness started as a personal project: a way to organize the training that mattered without jumping between several different fitness apps.
+          </p>
+          <p>
+            It is designed for everyday users, athletes, military members, and anyone who wants structured training without unnecessary complexity. The goal is simple: help you build strength, improve endurance, track progress, and stay mission-ready.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section id="features" class="section section-dark">
+      <div class="container">
+        <div class="section-heading">
+          <p class="eyebrow">Core capabilities</p>
+          <h2>Everything you need to train with purpose.</h2>
+          <p>
+            Warrior Fitness keeps normal workout generation local on your phone, so Daily WODs do not depend on AI to function.
+          </p>
+        </div>
+
+        <div class="feature-grid">
+          <article class="feature-card featured">
+            <div class="icon-box" aria-hidden="true">01</div>
+            <h3>Daily WODs</h3>
+            <p>Structured daily workouts designed to keep training varied, purposeful, and easy to start.</p>
+          </article>
+
+          <article class="feature-card">
+            <div class="icon-box" aria-hidden="true">02</div>
+            <h3>Equipment-Aware Workouts</h3>
+            <p>Training can adapt around the equipment you actually have available.</p>
+          </article>
+
+          <article class="feature-card">
+            <div class="icon-box" aria-hidden="true">03</div>
+            <h3>Workout Tracking</h3>
+            <p>Log strength work, timed sessions, custom exercises, notes, and training results.</p>
+          </article>
+
+          <article class="feature-card">
+            <div class="icon-box" aria-hidden="true">04</div>
+            <h3>Exercise Library</h3>
+            <p>Browse exercises with instructions and muscle/anatomy visualization to support better training decisions.</p>
+          </article>
+
+          <article class="feature-card">
+            <div class="icon-box" aria-hidden="true">05</div>
+            <h3>Running Tracking</h3>
+            <p>Record running-focused training alongside the rest of your Warrior Fitness history.</p>
+          </article>
+
+          <article class="feature-card">
+            <div class="icon-box" aria-hidden="true">06</div>
+            <h3>History & Personal Records</h3>
+            <p>Review completed training and keep important performance milestones easy to find.</p>
+          </article>
+
+          <article class="feature-card">
+            <div class="icon-box" aria-hidden="true">07</div>
+            <h3>Weight Tracker</h3>
+            <p>Track body-weight progress as part of your broader fitness picture.</p>
+          </article>
+
+          <article class="feature-card">
+            <div class="icon-box" aria-hidden="true">08</div>
+            <h3>Training Profile</h3>
+            <p>Set training preferences, available equipment, and custom exercises around your goals.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="army-fitness" class="section army-section">
+      <div class="container army-grid">
+        <div class="army-visual">
+          <div class="target-rings" aria-hidden="true">
+            <span></span><span></span><span></span><span></span>
+            <div class="target-core">AFT</div>
+          </div>
+        </div>
+
+        <div>
+          <p class="eyebrow">Army fitness tools</p>
+          <h2>Track readiness. Know where you stand.</h2>
+          <p class="section-lead">
+            Warrior Fitness includes Army fitness tracking and scoring tools so users can keep performance data beside the rest of their training.
+          </p>
+
+          <ul class="check-list">
+            <li>Army Fitness Test tracking</li>
+            <li>Score recording and progress review</li>
+            <li>Workout history alongside broader fitness training</li>
+            <li>Built for users training with military readiness in mind</li>
+          </ul>
+
+          <p class="fine-print">
+            Warrior Fitness is an independent application and is not endorsed by or affiliated with the U.S. Army, the Department of Defense, or the U.S. Government. Users should verify current standards and scoring requirements with official Army guidance.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section id="health-progress" class="section section-dark">
+      <div class="container health-grid">
+        <div>
+          <p class="eyebrow">Health & progress</p>
+          <h2>Your progress should be useful, not buried.</h2>
+          <p class="section-lead">
+            Warrior Fitness brings workout history, personal records, weight trends, running, and approved Android Health Connect data into one training-focused experience.
+          </p>
+
+          <div class="health-tags" aria-label="Supported Health Connect categories">
+            <span>Steps</span>
+            <span>Distance</span>
+            <span>Active Calories</span>
+            <span>Heart Rate</span>
+            <span>Weight</span>
+            <span>Exercise Sessions</span>
+          </div>
+
+          <p class="fine-print">
+            Health Connect access is permission-based. Imported Health Connect exercise sessions remain separate from Warrior Fitness workout history unless the app explicitly adds that behavior in a future update.
+          </p>
+        </div>
+
+        <div class="stat-stack" aria-label="Progress tracking examples">
+          <div class="stat-card">
+            <span class="stat-kicker">Training</span>
+            <strong>History</strong>
+            <small>Review completed sessions</small>
+          </div>
+          <div class="stat-card">
+            <span class="stat-kicker">Performance</span>
+            <strong>PRs</strong>
+            <small>Track personal records</small>
+          </div>
+          <div class="stat-card">
+            <span class="stat-kicker">Progress</span>
+            <strong>Weight</strong>
+            <small>See body-weight trends</small>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="coming-soon" class="section coming-section">
+      <div class="container">
+        <div class="section-heading">
+          <p class="eyebrow">Reinforcements incoming</p>
+          <h2>Coming Soon</h2>
+          <p>
+            The first public release focuses on a strong, dependable training foundation. These features are planned for future Warrior Fitness updates.
+          </p>
+        </div>
+
+        <div class="coming-grid">
+          <article class="coming-card">
+            <span class="coming-icon" aria-hidden="true">AI</span>
+            <h3>AI Coach</h3>
+            <p>Intentionally locked for the initial public release while the core experience launches first.</p>
+          </article>
+
+          <article class="coming-card">
+            <span class="coming-icon" aria-hidden="true">IN</span>
+            <h3>Personalized Training Insights</h3>
+            <p>Deeper feedback designed to help users understand patterns and progress over time.</p>
+          </article>
+
+          <article class="coming-card">
+            <span class="coming-icon" aria-hidden="true">▶</span>
+            <h3>Instructional Exercise Videos</h3>
+            <p>Additional movement guidance for exercises throughout the library.</p>
+          </article>
+
+          <article class="coming-card">
+            <span class="coming-icon" aria-hidden="true">+</span>
+            <h3>Expanded Integrations</h3>
+            <p>Additional health connections and broader workout programming as Warrior Fitness grows.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section cta-section">
+      <div class="container cta-card">
+        <div>
+          <p class="eyebrow">Prepare for launch</p>
+          <h2>Train hard. Track honestly. Earn your victory.</h2>
+          <p>
+            Warrior Fitness is preparing for its first public Google Play release.
+          </p>
+        </div>
+
+        <div class="cta-actions">
+          <a class="btn btn-primary" href="support.html">Get Support</a>
+          <a class="btn btn-secondary" href="privacy.html">Privacy Policy</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div>
+        <a class="brand footer-brand" href="index.html" aria-label="Warrior Fitness home">
+          <span class="brand-mark" aria-hidden="true">WF</span>
+          <span class="brand-copy">
+            <strong>Warrior Fitness</strong>
+            <small>Earn Your Victory</small>
+          </span>
+        </a>
+        <p class="footer-copy">Mission-focused fitness and progress tracking.</p>
+      </div>
+
+      <div class="footer-links">
+        <a href="index.html">Home</a>
+        <a href="privacy.html">Privacy Policy</a>
+        <a href="support.html">Support</a>
+      </div>
+
+      <p class="copyright">© <span id="year">2026</span> Warrior Fitness. All rights reserved.</p>
     </div>
-
-    <div class="card">
-      <h3>Workout of the Day</h3>
-      <p>
-        Generate daily workouts and follow programmed
-        training sessions.
-      </p>
-    </div>
-
-    <div class="card">
-      <h3>Army Fitness</h3>
-      <p>
-        Track Army fitness events, performance history,
-        and fitness testing progress.
-      </p>
-    </div>
-
-    <div class="card">
-      <h3>Exercise Library</h3>
-      <p>
-        Browse exercises, movement instructions,
-        muscle information, and demonstrations.
-      </p>
-    </div>
-
-    <div class="card">
-      <h3>AI Coach</h3>
-      <p>
-        Get personalized training guidance based on
-        workout history, goals, and available equipment.
-      </p>
-    </div>
-
-  </div>
-
-</section>
-
-
-<section>
-
-  <h2>Coming Soon</h2>
-
-  <p>
-    Warrior Fitness is currently in development.
-    Android testing and additional features are coming soon.
-  </p>
-
-</section>
-
-
-<section class="legal" id="privacy">
-
-  <h2>Privacy Policy</h2>
-
-  <p>
-    Warrior Fitness is committed to protecting user privacy.
-    Information collected by the app is used only to provide
-    fitness tracking, account, workout, and related app functionality.
-  </p>
-
-  <br>
-
-  <p>
-    Warrior Fitness does not sell personal information.
-  </p>
-
-  <br>
-
-  <p>
-    Additional details will be added as Warrior Fitness approaches
-    public release.
-  </p>
-
-</section>
-
-
-<section class="legal" id="terms">
-
-  <h2>Terms of Use</h2>
-
-  <p>
-    Warrior Fitness provides fitness tracking and informational tools.
-    It is not a substitute for professional medical advice,
-    diagnosis, or treatment.
-  </p>
-
-  <br>
-
-  <p>
-    Exercise data and videos provided by MuscleWiki.com
-  </p>
-
-</section>
-
-
-<section id="support">
-
-  <h2>Support</h2>
-
-  <p>
-    Need help with Warrior Fitness?
-  </p>
-
-  <p>
-    Support contact information will be added before public release.
-  </p>
-
-</section>
-
-
-<footer>
-
-  <p>
-    © 2026 Warrior Fitness. All rights reserved.
-  </p>
-
-  <p>
-    Exercise data and videos provided by
-    <a href="https://musclewiki.com/" target="_blank">
-      MuscleWiki.com
-    </a>
-  </p>
-
-</footer>
-
+  </footer>
 </body>
 </html>
